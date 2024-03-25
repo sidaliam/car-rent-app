@@ -1,0 +1,250 @@
+.hotelContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.hotelWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+/* Code CSS principal */
+
+/* ... Votre code CSS existant ... */
+
+/* Animation pour le bouton "Book Now" */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bookNow {
+  /* Votre code existant */
+  /* Ajout d'une animation au survol */
+  transition: transform 0.3s ease-in-out;
+}
+.bookNow:hover {
+  animation: pulse 3s infinite;
+}
+
+/* Media queries pour la réactivité */
+@media screen and (max-width: 768px) {
+  .hotelImgWrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hotelTitle {
+    font-size: 20px;
+  }
+  .hotelAddress {
+    font-size: 10px;
+  }
+  /* D'autres ajustements pour les appareils mobiles */
+}
+
+/* Code pour le slider d'images */
+/* ... Votre code CSS existant pour le slider ... */
+
+
+.hotelTitle {
+  font-size: 24px;
+}
+
+.hotelAddress {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hotelDistance {
+  color: #0071c2;
+  font-weight: 500;
+}
+
+.hotelPriceHighlight {
+  color: #008009;
+  font-weight: 500;
+}
+
+.hotelImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotelImgWrapper {
+  width: 33%;
+}
+
+.hotelImg {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.hotelDetails {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.hotelDetailsTexts {
+  flex: 3;
+}
+
+.hotelDesc {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.hotelDetailsPrice {
+  flex: 1;
+  background-color: #ebf3ff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hotelDetailsPrice > h1 {
+  font-size: 18px;
+  color: #555;
+}
+.hotelDetailsPrice > span {
+  font-size: 14px;
+}
+.hotelDetailsPrice > h2 {
+  font-weight: 300;
+}
+.hotelDetailsPrice > button {
+  border: none;
+  padding: 10px 20px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slider{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.613);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+.sliderWrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderImg{
+  width: 80%;
+  height: 80vh;
+}
+
+.close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: lightgray;
+  cursor: pointer;
+}
+
+.arrow{
+  margin: 20px;
+  font-size: 50px;
+  color: lightgray;
+  cursor: pointer;
+}
+
+/* Media queries pour la réactivité */
+@media screen and (max-width: 768px) {
+  .hotelWrapper {
+    max-width: 90%; /* Réduire la largeur maximale du conteneur */
+  }
+
+  .hotelImgWrapper {
+    width: 100%; /* Adapter la largeur de l'image à la taille de l'écran */
+  }
+
+  .hotelImages {
+    justify-content: center; /* Centrer les images sur les tablettes */
+  }
+
+  .hotelDetails {
+    flex-direction: column; /* Afficher les détails en colonne sur les tablettes */
+  }
+
+  .hotelDetailsTexts {
+    margin-top: 20px; /* Ajouter un espacement en haut des détails du texte */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hotelTitle {
+    font-size: 20px; /* Réduire la taille du titre pour les mobiles */
+  }
+
+  .hotelAddress {
+    font-size: 10px; /* Réduire la taille de l'adresse pour les mobiles */
+  }
+
+  .hotelDesc {
+    font-size: 12px; /* Réduire la taille de la description pour les mobiles */
+    margin-top: 10px; /* Réduire l'espacement en haut de la description */
+  }
+
+  .hotelDetailsPrice {
+    padding: 15px; /* Réduire le padding des détails de prix pour les mobiles */
+  }
+
+  .hotelDetailsPrice > h1 {
+    font-size: 16px; /* Réduire la taille du titre de prix pour les mobiles */
+  }
+
+  .hotelDetailsPrice > span {
+    font-size: 12px; /* Réduire la taille des éléments de prix pour les mobiles */
+  }
+
+  .hotelDetailsPrice > h2 {
+    font-size: 14px; /* Réduire la taille du sous-titre de prix pour les mobiles */
+  }
+
+  .hotelDetailsPrice > button {
+    padding: 8px 15px; /* Ajuster le padding du bouton pour les mobiles */
+  }
+}
+
+/* ... Votre code CSS existant pour le slider ... */
+
+/* Autres ajustements pour la réactivité */
+
+/* ... */
